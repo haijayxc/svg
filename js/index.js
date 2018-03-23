@@ -11,7 +11,33 @@ const config = {
       fill: '#ffffff',
       stroke: '#000000',
       'stroke-width': 1,
-    }
+    },
+    circle: {
+      cx: 80,
+      cy: 80,
+      r: 50,
+      fill: '#ffffff',
+      stroke: '#000000',
+      'stroke-width': 1,
+    },
+    ellipse: {
+      cx: 80,
+      cy: 80,
+      rx: 50,
+      ry: 30,
+      fill: '#ffffff',
+      stroke: '#000000',
+      'stroke-width': 1,
+    },
+    line: {
+      x1: 10,
+      y1: 10,
+      x2: 100,
+      y2: 100,
+      fill: '#ffffff',
+      stroke: '#000000',
+      'stroke-width': 1,
+    },
   },
   toolsOption: {
     x: {
@@ -30,6 +56,41 @@ const config = {
       step: 5,
     },
     height: {
+      min: 0,
+      max: 1000,
+      step: 5,
+    },
+    cx: {
+      min: 10,
+      max: 1000,
+      step: 5,
+    },
+    cy: {
+      min: 10,
+      max: 1000,
+      step: 5,
+    },
+    r: {
+      min: 10,
+      max: 1000,
+      step: 5,
+    },
+    x1: {
+      min: 0,
+      max: 1000,
+      step: 5,
+    },
+    y1: {
+      min: 0,
+      max: 1000,
+      step: 5,
+    },
+    x2: {
+      min: 0,
+      max: 1000,
+      step: 5,
+    },
+    y2: {
       min: 0,
       max: 1000,
       step: 5,
