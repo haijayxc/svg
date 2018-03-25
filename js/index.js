@@ -129,6 +129,7 @@ class Shap {
     this.option = config.defaultOption[tagName];
     this.create();
     this.setOption();
+    Shap.datas[this.id] = this;
   }
   create() {
     this.id = utils.hash();
@@ -217,7 +218,6 @@ operationBtn.addEventListener('click', (e) => {
   const id = e.target.id;
   if (id && !!config.defaultOption[id]) {
     const shap = new Shap(id, stage.svg);
-    Shap.datas[shap.id] = shap;
     tools.changeShap(shap);
   }
 }, false);
